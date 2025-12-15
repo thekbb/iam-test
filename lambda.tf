@@ -39,6 +39,7 @@ resource "aws_iam_role_policy" "lambda_policy" {
           "dynamodb:List*",
           "dynamodb:Query",
           "dynamodb:Scan",
+          "dynamodb:update*",
         ]
         Resource = "*"
       }
