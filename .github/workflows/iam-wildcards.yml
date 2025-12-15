@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Expand IAM Wildcards
-        uses: thekbb/expand-aws-iam-wildcards@v1
+        uses: thekbb/expand-aws-iam-wildcards@utilize-iam-expand-directly
 
