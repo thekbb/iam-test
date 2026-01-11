@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Expand IAM Wildcards
-        uses: thekbb/expand-aws-iam-wildcards@refactor-logic-out-of-index.ts
+        uses: thekbb/expand-aws-iam-wildcards@main
 
