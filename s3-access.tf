@@ -25,7 +25,7 @@ resource "aws_iam_role_policy" "s3_read_policy" {
       {
         Effect = "Allow"
         Action = [
-          "s3:Describe:",
+          "s3:Describe:*",
           "s3:Get*",
           "s3:List*",
         ]
