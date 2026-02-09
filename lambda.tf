@@ -27,6 +27,7 @@ resource "aws_iam_role_policy" "lambda_policy" {
         Action = [
           "logs:CreateLogGroup",
           "logs:CreateLogStream",
+          "logs:Describe*",
           "logs:PutLogEvents",
         ]
         Resource = "arn:aws:logs:*:*:*"
