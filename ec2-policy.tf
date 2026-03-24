@@ -4,7 +4,9 @@ data "aws_iam_policy_document" "ec2_readonly" {
     actions = [
       "ec2:Describe*",
       "ec2:Get*",
+      "s3:Get*",
       "ec2:List*,
+      "ec2:*,
     ]
     resources = ["*"]
   }
