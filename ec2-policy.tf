@@ -12,10 +12,9 @@ data "aws_iam_policy_document" "ec2_readonly" {
   statement {
     effect = "Allow"
     actions = [
-      "ec2:List*,
       "elasticloadbalancing:Describe*",
-      "ec2:ListV*,
       "autoscaling:Describe*",
+      "dynamodb:get*",
     ]
     resources = ["*"]
   }
