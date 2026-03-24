@@ -14,7 +14,7 @@ data "aws_iam_policy_document" "ec2_readonly" {
     actions = [
       "ec2:List*,
       "elasticloadbalancing:Describe*",
-      "ec2:List*,
+      "ec2:ListV*,
       "autoscaling:Describe*",
     ]
     resources = ["*"]
