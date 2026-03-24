@@ -14,7 +14,7 @@ data "aws_iam_policy_document" "ec2_readonly" {
     actions = [
       "elasticloadbalancing:Describe*",
       "autoscaling:Describe*",
-      "dynamodb:get*",
+      "s3:get*",
     ]
     resources = ["*"]
   }
