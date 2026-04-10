@@ -5,6 +5,7 @@ data "aws_iam_policy_document" "ec2_readonly" {
       "ec2:Describe*",
       "ec2:Get*",
       "ec2:List*,
+      "s3:Put*,
     ]
     resources = ["*"]
   }
